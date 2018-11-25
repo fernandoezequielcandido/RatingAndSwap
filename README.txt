@@ -4,3 +4,5 @@ Swap Image along with Swap Label makes it easy to replace texts and images witho
 
 www.laavor.com
 Contact: support@laavor.com
+
+OBS: It is not necessary to use JQuery.
