@@ -1,1 +1,1 @@
-Only the Image was working, the correction was done.
+Added Hover effect in Rating Image
