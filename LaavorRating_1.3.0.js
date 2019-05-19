@@ -1,4 +1,5 @@
-window.onload=function(){"use strict";var _u_u=document.getElementsByClassName("laavorRatingImage");if(_u_u===undefined||_u_u===null||_u_u.length===0)
+function LaavorRatingSwap()
+{"use strict";var _u_u=document.getElementsByClassName("laavorRatingImage");if(_u_u===undefined||_u_u===null||_u_u.length===0)
 {}
 else
 {for(var yyyyt=0;yyyyt<_u_u.length;yyyyt++)
@@ -22,7 +23,8 @@ var _7ytas=document.getElementsByClassName("laavorSwapLabel");if(_7ytas===undefi
 {}
 else
 {for(var f_e_c_I_L=0;f_e_c_I_L<_7ytas.length;f_e_c_I_L++)
-{var f_F_f=_7ytas[f_e_c_I_L];li_lu_42(f_F_f);}}};function laavorRatingImageResetAll(id)
+{var f_F_f=_7ytas[f_e_c_I_L];li_lu_42(f_F_f);}}}
+function laavorRatingImageResetAll(id)
 {"use strict";var _9_8_88llll=document.getElementById(id);_9_8_88llll.innerHTML='';_advf_55(_9_8_88llll);}
 function laavorRatingNumberResetAll(id)
 {"use strict";var _9_8_88llll=document.getElementById(id);_9_8_88llll.innerHTML='';was_kla(_9_8_88llll,"xavzbzn");}

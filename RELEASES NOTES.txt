@@ -1,1 +1,1 @@
-Added Hover effect in Rating Image
+Now needs call LaavorRatingSwap(); in HTML page to start rating change needed for no longer working on MVC pages.
