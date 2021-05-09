@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Laavor - Component for Xamarin</title>
+<!-- Stylesheets -->
+<link rel="shortcut icon" href="images/icopng.png" type="image/x-icon">
+<link rel="icon" href="images/icopng.png" type="image/x-icon">
+
+<script src="js/LaavorRating.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+    LaavorRatingSwap();
+
+}
+</script>
+
+</head>
+
+<body>
+
+<a href="http://www.laavor.com"><img src="images/logo.png"></img></a>
+
+<h1>Welcome to Laavor Rating and Swap Image/Label!</h1>
+
+<br/>
+<br/>
+<span class="laavorRatingImage" id="ratingStars" commandEvent="changeValue" ItemsNumber="15" imageDeselect="images\starWhite.png" imageSelect="images\starYellow.png" ></span>
+<span id="spanValue"></span>
+<br/>
+<br/>
+<span>Rating Image - With a unique class you can creating a rating, with a event using a property 'commandEvent'.</span>
+
+<br/>
+<br/>
+<br/>
+
+<span class="laavorRatingImage" initialValue="2" id="ratingBalls" ItemsNumber="8" imageDeselect="images\ball1.png" imageSelect="images\ball2.png"></span>
+<br/><button type="button" onclick="laavorRatingImageResetAll('ratingBalls');">Reset Balls</button>
+<button type="button" onclick="alert(laavorRatingGetValue('ratingBalls'));">Number balls selected?</button>
+<br/>
+<br/>
+<span>InitialValue inform the selected value when starting without user click. You can set ItemsNumber  telling the rating size (number of images). </span>
+<span> Property imageDeselect is preview click image and imageSselect is the post click image.</span>
+
+<br/>
+<br/>
+<br/>
+<span class="laavorRatingImage" id="ratingBoxes" ItemsNumber="7" imageDeselect="images\box.png" imageSelect="images\boxOpen.png" 
+ imageWidth="25px" imageHeight="25px" blockSelect="true"></span>
+<br/>
+<br/>
+<span>You can change width and height of images using imageWidth/imageHeight, if blockSelect is 'true' the user can change rating only once.</span>
+
+<br/>
+<br/>
+<br/>
+<div class="laavorRatingNumber" id="ratingNumber" ItemsNumber="10" blockSelect="false" border="1" spaceBetween="5" textColorSelect="#C80000" textColorDeselect="#D8D8D8"
+     backgroundColorSelect="#ffffff" backgroundColorDeselect="#ffffff" borderColorSelect="#880000" borderColorDeselect="#787878" fontSize="27px"></div>
+	 <br/>
+<button type="button" onclick="laavorRatingNumberResetAll('ratingNumber');">Reset numbers</button>
+<button type="button" onclick="alert(laavorRatingGetValue('ratingNumber'));">Number numbers selected</button>
+<br/>
+<br/>
+	 <span>Instead of images use the numerical rating. It is possible to change as text, background and border kernels easily.</span>
+	 <span>With spaceBetween you can define the distance between values, also available in Rating Image.</span>
+<br/>
+<br/>
+<br/>
+
+<div class="laavorRatingLetter" id="ratingLetter" ItemsNumber="14" spaceBetween="1" initialValue="5" ></div>
+<br/>
+<button type="button" onclick="laavorRatingLetterResetAll('ratingLetter');">Reset letters</button>
+<button type="button" onclick="alert(laavorRatingLetterGetValue('ratingLetter'));">Number letters selected</button>
+<br/>
+<br/>
+<span>An interesting new rating for letters, giving a different usability to the user.</span>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="laavorSwapImage" id="swapImage" firstImageWidth="80px" secondImageWidth="150px" secondImageHeight="150px" firstImageHeight="80px" 
+firstImage="images\h2.png" secondImage="images\h1.png" commandEvent="eventSwapImage"></div>
+<br/>
+<div class="laavorSwapImage" id="swapImage2" firstImage="images\sound2.png" secondImage="images\sound1.png"></div>
+<br/>
+<span>Easily swap images with only one html tag, indicating the first and second images, with a simple event and you can control the functionality you need.</span>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="laavorSwapLabel" id="swapLabel" firstText="Your Text" secondText="Laavor is awesome!" firstTextColor="#D8D8D8" secondTextColor="#C80000"
+ firstBorderColor="#787878" border="1" secondBorderColor="#880000" firstFontSize="35px" secondFontSize="35px" 
+ firstBackgroundColor="#FFFFF" secondBackgroundColor="#FFFFFF"></div>
+ <br>
+ <span>Easily change text with one touch and change color and background to enhance user usability.</span>
+ 
+ 
+<br/>
+<br/>
+<br/>
+
+<a href="#">support@laavor.com</a>
+<div>Copyright &copy; 2018, Isaac Laavor</div>
+<a href="http://www.laavor.com"><img src="images/logo.png"></img></a>
+
+
+
+</body>
+</html>
